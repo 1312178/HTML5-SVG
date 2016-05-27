@@ -16,7 +16,7 @@ Thành viên:
 Các nội dung đã tìm hiểu và *1 số* hình ảnh trong slide để minh họa:
 
 - SVG là gì?
-  !slide1.PNG
+  https://github.com/1312178/HTML5-SVG/blob/master/slide1.PNG
 - Tìm hiểu thêm về XML.
 - Thẻ <svg>
 - Ưu điểm và nhược điểm.
