@@ -31,8 +31,9 @@ Thành viên:
   ![ScreenShot](anh7.PNG)
   <li>Các ví dụ và ứng dụng liên quan.</li>
   </ul>
+
 ## Hình vẽ và hiệu ứng với SVG.
 
-Link ảnh GIF demo ứng dụng:
+  Link ảnh GIF demo ứng dụng:
 
 ![Video Walkthrough](demo.gif)
