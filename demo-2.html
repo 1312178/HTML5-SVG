@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="demo-2.css">
+</head>
+<body>
+	<svg width="100%" height="700" viewBox="0 0 100% 700">
+		<defs>
+			<linearGradient id="Grad1">
+					<stop offset="10%" style="stop-color: rgb(255, 64, 0); stop-opacity: 1"/>
+					<stop offset="50%" style="stop-color: yellow; stop-opacity: 1"/>
+					<stop offset="100%" style="stop-color: rgb(255, 128, 0); stop-opacity: 1"/>
+			</linearGradient>
+			<linearGradient id="Grad2" x1="0%" y1="20%" x2="30%" y2="100%">
+					<stop offset="0%" style="stop-color: rgb(255, 102, 102); stop-opacity: 1"/>
+					<stop offset="100%" style="stop-color: rgb(153, 0, 0); stop-opacity: 1"/>
+			</linearGradient>
+		</defs>
+		<path d="M50 150 C150 50 250 250 350 150 Q380 125 400 150 C450 200 500 175 800 175 L900 175 L1150 175" stroke ="url(#Grad1)" stroke-dasharray="10, 10" stroke-linecap="round" stroke-width="7" fill="none" class="line1"/>
+	    <path d="M50 200 Q150 50 250 200 Q380 350 500 150 C520 125 545 125 560 125 L 1150 125" stroke="rgb(77, 136, 255)" stroke-width="7" fill="none" class="line2"/>
+	    <path d="M 50 100 Q200 200 300 155 Q450 100 540 125 Q600 150 650 150 L 1150 150" fill="none" stroke-width="7" stroke-linecap="square" stroke-dasharray="10, 15" stroke="rgb(0, 77, 0)" class="line3"/>
+	    <path d="M50 300 Q200 400 300 300 Q450 150 525 250 Q600 335 650 300 Q675 275 725 277 L1150 280" stroke-dasharray="10, 5, 5, 10" fill="none" stroke-width="7" stroke="url(#Grad2)" class="line4"/>
+	</svg>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+.line1, .line2, .line3, .line4 {
+	stroke-dasharray: 2300;
+ 	stroke-dashoffset: 2300;
+  	animation-name: dash;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	}
+
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Demo-1</title>
+</head>
+<body>
+	<!-- <svg width="100%" height="500">
+		<path d="M 50 150 Q 100 50 150 150" stroke="green" stroke-width="3" fill="none" />
+		<path d="M 150 150 Q 200 250 250 150" stroke="green" stroke-width="3" fill="none" />
+		<path d="M 250 150 C280 100 300 150 320 150 L 400 150" stroke="green" stroke-width="3" fill="none" />
+		<path d="M 50 200 Q100 100 150 200" stroke="green" stroke-width="3" fill="none" />
+		
+	</svg> -->
+	<!-- minh họa các thẻ textPath và thuộc tính startOffset -->
+	<svg width="100%" height="300" xmlns="http://www.w3.org/2000/svg" 
+     	xmlns:xlink="http://www.w3.org/1999/xlink">
+     	<defs>
+     		<path id="cloud" d="M 45 145 Q45 95 95 95 Q120 55 145 95 Q195 25 245 95 C345 45 345 95 445 145 z"/>
+     		<linearGradient id="Grad1">
+				<stop offset="10%" style="stop-color: rgb(255, 64, 0); stop-opacity: 1"/>
+				<stop offset="50%" style="stop-color: yellow; stop-opacity: 1"/>
+				<stop offset="100%" style="stop-color: rgb(255, 128, 0); stop-opacity: 1"/>
+			</linearGradient>
+     	</defs>
+		<path d="M 50 150 Q50 100 100 100 Q125 60 150 100 Q200 30 250 100 C350 50 400 100 450 150 z" stroke="black" stroke-width="3" fill="none" />
+		<text font-family="Arial" font-size="15" font-weight="500">
+			<textPath xlink:href="#cloud">
+				I'm a cloud ~
+			</textPath>
+			<textPath xlink:href="#cloud" startOffset="20%">
+				I can fly ~
+			</textPath>
+		</text>
+		<g>
+			<ellipse cx="650" cy ="150" rx="150" ry=" 115" fill="rgb(255, 204, 0)"/>
+			<ellipse cx="650" cy="150" rx="80" ry="115" stroke-width="3" stroke="rgb(255, 26, 26)" fill="none"/>
+			<circle cx="650" cy="150" r="115" stroke-width="3" stroke="rgb(255, 26, 26)" fill="none" />
+			<ellipse cx="650" cy ="150" rx="150" ry=" 115" stroke-width="3" stroke="black" fill="none"/>
+			<polygon points="640 20, 645 15, 660 15, 665 20, 660 42, 655 45, 650 45, 645 42" fill="green" stroke="black" stroke-width="3"/>
+			<polygon points="600 140, 625 165, 590 165" fill="black" />
+			<polygon points="700 140, 675 165, 710 165" fill="black" />
+			<path d="M585 200 L620 200 L620 205 L625 205 L625 200 L670 200 L 670 205 L675 205 L675 200 L715 200 Q695 225 650 225 L650 220 L645 220 L645 220 L645 225 Q595 225 585 200" fill="black"/>
+		</g>
+	</svg>
+	
+	<svg width="100%" height="500" viewBox="-50 -50 900 500">
+		<g>
+			<!-- khung xe -->
+			<path d="M50 300 
+			C50 250 50 200 125 200 
+			Q125 100 250 100 
+			L250 290 
+			L255 290 
+			L255 -20 
+			L900 -20 
+			L900 300 
+			L800 300 
+			A50 50 0 1 0 700 300 
+			L400 300 
+			A50 50 0 1 0 300 300 
+			L200 300 
+			A50 50 0 1 0 100 300 Z" stroke="black" stroke-width="3" fill="none" />
+			<line x1="50" y1="300" x2="95" y2="300" stroke-linecap="round" stroke-width="10" stroke="black" />
+			<!-- bánh xe -->
+			<circle cx="150" cy="300" r="40" stroke ="black" stroke-width="3" fill="black" />
+			<circle cx="150" cy="300" r="20" fill="white" />
+			<circle cx="350" cy="300" r="40" stroke ="black" stroke-width="3" fill="black" />
+			<circle cx="350" cy="300" r="20" fill="white" />
+			<circle cx="750" cy="300" r="40" stroke ="black" stroke-width="3" fill="black" />
+			<circle cx="750" cy="300" r="20" fill="white" />
+			<!-- kính xe + tay nắm cửa xe -->
+			<path d="M150 200 Q150 125 225 125 L225 200 Z" stroke="black" stroke-width="3" fill="none" />
+			<line x1="225" y1="210" x2="205" y2="210" stroke-width="5" stroke="black" />
+		</g>
+	</svg>
+
+	<!-- minh hoạ thẻ tspan -->
+	<svg width="100%" height="500" xmlns="http://www.w3.org/2000/svg" 
+     	xmlns:xlink="http://www.w3.org/1999/xlink">
+     	<defs>
+     		<path id="path1"
+		          d="M 100 200 
+		             C 200 100 300   0 400 100
+		             C 500 200 600 300 700 200
+		             C 800 100 900 100 900 100" />
+     	</defs>
+     	<text font-family="Arial" font-size="20" font-weight="500" fill="url(#Grad1)">
+     		<textPath xlink:href="#path1">
+     			<tspan x="100 125 150 200 250 300 310 320 330 340 350 375 400 425 450 460 470 480 490 500">
+     				Lorem Ipsum is simply
+     				<tspan dy="-50" font-weight="900" fill="rgb(255, 102, 0)">
+     					dummy 
+     				</tspan>
+     				<tspan dy="50"> 
+     				text of the printing and typesetting industry.
+     					</tspan>
+     			</tspan>
+     		</textPath>
+     	</text>
+     	<path d="M 100 225 
+	             C 200 125 300 25 400 125
+	             C 500 225 600 325 700 225
+	             C 800 125 900 125 900 125" stroke="url(#Grad1)" stroke-width="5" stroke-dasharray="10, 10" stroke-linecap="round" fill="none"/>
+	</svg>
+	<svg width="100%" height="700" viewBox="-20 -20 1500 700">
+		<defs>
+			<linearGradient id="Grad2" x1="0%" y1="20%" x2="30%" y2="100%">
+					<stop offset="0%" style="stop-color: rgb(255, 102, 102); stop-opacity: 1"/>
+					<stop offset="100%" style="stop-color: rgb(153, 0, 0); stop-opacity: 1"/>
+			</linearGradient>
+			<linearGradient id="Grad3" x1="0%" y1="30%" x2="40%" y2="100%">
+					<stop offset="0%" style="stop-color: rgbrgb(204, 0, 0); stop-opacity: 1"/>
+					<stop offset="100%" style="stop-color:rgb(0, 204, 0); stop-opacity: 1"/>
+			</linearGradient>
+		</defs>
+		<g>
+			<path d="M300 500 C0 600 0 0 300 100 Q325 125 350 100 C650 0 650 600 350 500 Q325 475 300 500" fill="url(#Grad2)"/>
+			<path d="M325 120 Q300 -10 375 -10" stroke-width="20" fill="none" stroke ="rgb(102, 51, 0)" />
+			<path d="M325 125 Q325 -20 500 -20 Q500 125 325 125" fill="url(#Grad3)"/>
+			<path d="M325 125 Q250 125 250 0 Q325 0 325 125" fill="url(#Grad3)" />
+		</g>
+		<g id="haft-app">
+			<path d="M700 100 C1000 0 1000 600 700 500" stroke="rgb(204, 0, 0)" fill="rgb(255, 255, 179)"/>
+			<path d="M750 150 Q800 125 800 150 Q800 175 750 150" fill="rgb(51, 26, 0)"/>
+			<path d="M775 250 Q825 225 825 250 Q825 275 775 250" fill="rgb(51, 26, 0)"/>
+			<path d="M775 350 Q825 325 825 350 Q825 375 775 350" fill="rgb(51, 26, 0)"/>
+			<path d="M750 450 Q800 425 800 450 Q800 475 750 450" fill="rgb(51, 26, 0)"/>
+		</g>
+	</svg>
+	<svg width="100%" height="700" viewBox="0 0 100% 700" >
+		<g>
+			<rect width="800" height ="400" fill="rgb(255, 71, 26)"/>
+			<circle cx="100" cy="100" r="50" fill ="rgb(255, 153, 0)"/>
+			<path d="M 50 250 L 150 150 L 250 250 L 400 50 L 550 250 C 600 200 700 200 750 250 z" stroke="black" fill="none"/>
+			<polygon points="105 200, 150 155, 195 200, 155 175, 150 200, 145 175" stroke="black" fill="none"/>	
+			<polygon points="330 150, 400 55, 470 150, 435 125, 420 160, 405 120, 385 175, 370 125" stroke="black" fill="none"/>		
+			<path d="M200 100 Q225 75 250 75 C 250 50 350 50 350 75 Q375 75 370 100 z" fill="rgb(153, 206, 255)" />
+			<line x1="50" y1="350" x2="750" y2="350" stroke ="black" />			
+		</g>
+	</svg>
+</body>
+</html>
