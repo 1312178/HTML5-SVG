@@ -9,26 +9,29 @@ Thành viên:
 
 ## Mô tả
 ```
-* Nhóm tìm hiểu về HTML5 SVG là gì? Các thông tin, kiến thức liên quan và các ứng dụng của SVG cũng như các ứng dụng đã được thực hiện bằng SVG. Đồng thời, tạo 1 ứng dụng nho nhỏ demo cho đề tài tìm hiểu. 
+* Nhóm tìm hiểu về HTML5 SVG là gì? 
+* Các thông tin, kiến thức liên quan và các ứng dụng của SVG cũng như các ứng dụng đã được thực hiện bằng SVG. 
 * Trình bày trên slide.
 ```
 
 ## Nội dung:
 
-- Các nội dung đã tìm hiểu và *1 số* hình ảnh trong slide để minh họa:
+- Các nội dung đã tìm hiểu và ***1 số*** hình ảnh trong slide để minh họa:
   <ul>
   <li>SVG là gì?</li>
-  <img src = "https://github.com/1312178/HTML5-SVG/blob/master/slide1.PNG">
+  ![ScreenShot](anh1.PNG)
   <li>Tìm hiểu thêm về XML.</li>
+  ![ScreenShot](anh2.PNG)
   <li>Thẻ <svg></li>
-  ![ScreenShot](slide1.PNG)
   <li>Ưu điểm và nhược điểm.</li>
+  ![ScreenShot](anh3.jpg)
   <li>Cách sử dụng.</li>
+  ![ScreenShot](anh4.jpg)
   <li>So sánh với Canvas.</li>
+  ![ScreenShot](anh7.PNG)
   <li>Các ví dụ và ứng dụng liên quan.</li>
-  <li>Ứng dụng demo của nhóm.</li>
   </ul>
-## Demo
+## Hình vẽ và hiệu ứng với SVG.
 
 Link ảnh GIF demo ứng dụng:
 
