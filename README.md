@@ -18,7 +18,7 @@ Thành viên:
 - Các nội dung đã tìm hiểu và *1 số* hình ảnh trong slide để minh họa:
   <ul>
   <li>SVG là gì?</li>
-  <img src = "http://imgur.com/1Cm9WG1">
+  <img src = "https://github.com/1312178/HTML5-SVG/blob/master/slide1.PNG">
   <li>Tìm hiểu thêm về XML.</li>
   <li>Thẻ <svg></li>
   ![ScreenShot](slide1.PNG)
